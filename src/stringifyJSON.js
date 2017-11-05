@@ -36,7 +36,6 @@ var stringifyJSON = function(obj) {
             objString.push("" + stringifyJSON(key) + ":" + stringifyJSON(obj[key]));
         }
       }
-      console.log(objString)
       return '{' + objString + '}'
     }
   }
